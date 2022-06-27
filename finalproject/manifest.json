@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Final",
+  "version": "0.1",
+
+  // Recommended
+  "action": {
+    "default_icon": {              // optional
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+    },
+    "default_title": "Click Me",   // optional, shown in tooltip
+    "default_popup": "popup.html"  // optional
+  },
+  
+  "description": "A plain text description",
+  "background":{
+      "service_worker": "background.js"
+  },
+  
+  "permissions": ["storage", "activeTab", "scripting"]
+}

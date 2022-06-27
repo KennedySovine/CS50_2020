@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Speak",
+  "version": "3.0",
+  "author": "Kennedy Sovine",
+
+  // Recommended
+  "description": "Makes everything pog",
+
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts":[
+    {
+      "matches": ["*://*/*"],
+      "all_frames": true,
+      "js": ["popup.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
